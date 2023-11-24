@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    
+</head>
+<body>
+    <picture>
+        <source media="(max-width:500px)" srcset="./img/img-p.png" type="image/png">
+        <source media="(max-width:720px)" srcset="./img/img-m.png" type="image/png">
+        <img src="./img/img-g.png" alt="" srcset="">
+    </picture>
+    <h1>REPRODUZINDO AUDIO</h1>
+    <P>Reprozindo audio sem conversão</P>
+    <audio src="media/Press fuse.mp3" autoplay controls loop></audio>
+<!-- controls faz você da play na musica
+loop seria pra reproduzir sem parar
+autoplay faz a musica a musica tocar ao entrar no site -->
+
+
+
+
+    <p>Reprozindo Áudio com conversão</p>
+       <audio preload="metadata" autoplay loop>
+       <source src="media/press fuse.mp3" type="audio/mp3">
+       <source src="mediapress fuse.ogg" type="audio/gg">
+       <source src="media/press fuse.wav" type="audio/wav">
+       </audio>
+       
+       
+       
+
+
+
+
+
+
+</body>
+</html>
