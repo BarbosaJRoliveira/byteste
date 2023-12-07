@@ -8,7 +8,37 @@
     <script>
         function calcular(){
             let peso= parseFloat (document.getElementById("peso").value);
-            let altura= parseFloat(document.getSelection("altura").value);
+            let altura= parseFloat(document.getElementById("altura").value);
+           let calculo=peso/(altura*altura);
+           let imc=calculo.toFixed(2);
+           
+           
+           
+
+
+
+
+            if (imc<18.5){ alert("seu imc é :"+imc+" magreza");}
+            else if(imc<=25){ alert("seu imc é: "+imc+" normal");}
+            else if(imc<=30){alert("seu imc é: "+imc+" sobrepeso");}
+            else if(imc<39){alert("seu imc é: "+imc+" obesidade")}
+            else if(imc>40){alert("seu imc é: "+imc+" obesidade grave")}
+            
+
+            
+
+            
+
+        
+            
+        
+        
+        
+     }
+    
+        
+            
+            
 
 
 
@@ -17,7 +47,7 @@
 
 
 
-        }
+        
 
 
 
@@ -40,11 +70,11 @@
 </head>
 <body>
     <h1>Calculo imc</h1>
-    <label for="">altura(ex;1,70)</label>
-    <input type="text" name="" id="" >
-    <label for="">Peso(ex;69,2)</label>
-    <input type="text" name="" id="">
-    <input type="button" onclick="" value="calcular">
+    <label for="">altura(ex;1.70)</label>
+    <input type="text" name="" id="altura" >
+    <label for="">Peso(ex;69.2)</label>
+    <input type="text" name= "" id="peso">
+    <input type="button" onclick="calcular()" value="calcular">
 
     
 
