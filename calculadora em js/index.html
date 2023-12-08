@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function somar(){
+          let n1= parseFloat (document.getElementById("n1").value);
+          let n2= parseFloat (document.getElementById("n2").value);
+          let soma=n1+n2
+          alert(soma);
+         }
+            function subtrair(){ 
+            let n1= parseFloat (document.getElementById("n1").value);
+            let n2= parseFloat (document.getElementById("n2").value);
+            let subtrair=n1-n2
+            alert(subtrair);
+        }
+        function divisão(){ 
+            let n1= parseFloat (document.getElementById("n1").value);
+            let n2= parseFloat (document.getElementById("n2").value);
+            let divisão=n1/n2
+            alert(divisão);
+        }
+        function Multiplicação(){ 
+            let n1= parseFloat (document.getElementById("n1").value);
+            let n2= parseFloat (document.getElementById("n2").value);
+            let Multiplicação=n1*n2
+            alert(Multiplicação);
+        }
+
+
+
+
+
+
+
+
+
+    </script>
+
+
+
+
+
+
+
+</head>
+<body>
+    <H1><b>Calculadora</b></H1>
+    <p>primeiro numero</p>
+    <input type="text" id="n1">
+    <p>segundo numero</p>
+    <input type="text"  id="n2">
+   
+    <input type="button" onclick="somar()" value="somar">
+    <input type="button" onclick="subtrair()" value="subtrair">
+    <input type="button" onclick="divisão()" value="divisão">
+    <input type="button" onclick="Multiplicação()" value="Multiplicação">
+
+
+
+    
+
+
+    
+    
+</body>
+</html>
